@@ -1,34 +1,32 @@
 # 📌 TaskForge API
 
-![Build](https://img.shields.io/github/actions/workflow/status/PranavAsuri/taskforge-api/ci.yml?branch=main)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Java](https://img.shields.io/badge/Java-21-orange)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-brightgreen)
-![Postgres](https://img.shields.io/badge/Postgres-16-blue)
+![Spring Boot](https://img.shields.io/badge/Backend-SpringBoot-green)
+![Postgres](https://img.shields.io/badge/Database-Postgres-blue)
 ![Docker](https://img.shields.io/badge/Docker-ready-blue)
+![Java](https://img.shields.io/badge/Java-21-orange)
 
-A **Spring Boot + PostgreSQL REST API** for managing users, projects, tasks, and comments with JWT authentication, validation, and global error handling.
+A **Spring Boot + PostgreSQL REST API** for managing users, projects, tasks, and comments.  
+Includes validation, global error handling, and containerized Postgres with Docker.
 
 ---
 
 ## 🚀 Features
-- Secure authentication with **JWT** + BCrypt passwords
-- Role-based access (USER / ADMIN)
-- CRUD for Users, Projects, Tasks, Comments
-- Pagination, sorting, validation, and global error handling
-- Containerized Postgres with Docker
-- CI pipeline with GitHub Actions
+- User registration & login with validation
+- CRUD operations for Users, Projects, Tasks, Comments
+- Global error handling (400/409 responses instead of 500s)
+- Dockerized Postgres for reproducible local dev
+- CI pipeline with GitHub Actions (build + test)
 
 ---
 
 ## 🛠️ Tech Stack
 - **Backend:** Java 21, Spring Boot, JPA/Hibernate  
 - **Database:** PostgreSQL (Dockerized)  
-- **Tools:** Maven, GitHub Actions, Postman, Docker  
+- **Tools:** Maven, GitHub Actions, Postman  
 
 ---
 
-## ⚡ Quickstart (Local Dev)
+## ⚡ Quickstart
 
 ```bash
 # 1. Clone repo
